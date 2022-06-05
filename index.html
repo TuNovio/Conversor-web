@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="vFsiewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos\estilos.css">
+    <title>Conversor</title>
+</head>
+<body>
+    <video autoplay muted loop id="miVideo">
+        <source src="estilos\video-fondo.mp4" type="video/mp4">
+    </video>
+    <div class="wraper">
+        <h2 class="title">Convertidor de pasos</h2>
+        <h3 id="info"> Ingresa los pasos y presiona Calcular</h3>
+        <p class="input"> Pasos </p>
+        <input type="number" onfocus="this.value=''" id="steps">
+        <!-- Imagen -->
+        <div class="loader">
+            <img src="estilos\cargar.gif" alt="">
+        </div>
+        <p id="km"></p>
+        <p id="calories"></p>
+        <!-- botones para calcular-->    
+        <button id="btn" class="calculate"> Calcular </button>
+        <button id="btn" class="clear"> limpiar </button>
+        <br>
+        <br>
+        <footer class="footer">
+            <h5>Echo por alfonso gomajoa</h5>
+            <h5>Pasos para conversiones</h5>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
